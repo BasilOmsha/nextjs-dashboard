@@ -9,6 +9,7 @@ import {
   Revenue,
 } from './definitions';
 import { formatCurrency } from './utils';
+require('dotenv').config({ path: `${__dirname}/../../../../keys/nextjs-dashboard/.env` });
 
 export async function fetchRevenue() {
   // Add noStore() here to prevent the response from being cached.
