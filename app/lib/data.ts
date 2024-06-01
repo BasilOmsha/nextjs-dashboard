@@ -65,7 +65,7 @@ export async function fetchCardData() {
          SUM(CASE WHEN status = 'pending' THEN amount ELSE 0 END) AS "pending"
          FROM invoices`;
 
-    const data = await Promise.all([
+    const data = await Promise.all([ // promise.all is used to run multiple promises in parallel. initiate all promises at the same time.
       invoiceCountPromise,
       customerCountPromise,
       invoiceStatusPromise,
