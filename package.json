@@ -6,7 +6,7 @@
     "prettier": "prettier --write --ignore-unknown .",
     "prettier:check": "prettier --check --ignore-unknown .",
     "start": "next start",
-    "seed": "cross-env DOTENV_CONFIG_PATH=../../keys/nextjs-dashboard/.env node -r dotenv/config ./scripts/seed.js"
+    "seed": "node -r dotenv/config ./scripts/seed.js"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
@@ -29,7 +29,6 @@
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.14",
     "@vercel/style-guide": "^5.0.1",
-    "cross-env": "^7.0.3",
     "dotenv": "^16.4.5",
     "eslint": "^8.52.0",
     "eslint-config-next": "^14.0.0",
