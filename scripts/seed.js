@@ -1,3 +1,4 @@
+// require('dotenv').config({ path: `${__dirname}/../../../keys/nextjs-dashboard/.env` });
 const { db } = require('@vercel/postgres');
 const {
   invoices,
@@ -6,7 +7,7 @@ const {
   users,
 } = require('../app/lib/placeholder-data.js');
 const bcrypt = require('bcrypt');
-require('dotenv').config({ path: `${__dirname}/../../../keys/nextjs-dashboard/.env` });
+
 
 async function seedUsers(client) {
   try {
